@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    margin: 30px 20px;
+}
+
+.container img{
+    width: 250px;
+    height: 100px;
+    vertical-align: middle;
+    
+}
+
+.container h2{
+    color: red;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.pricing-row{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+}
+
+.pricing-column{
+    background: black;
+    padding: 10% 15%;
+    border-radius: 18px;
+    color: white;
+    text-align: center;
+    border: red solid 2px;
+}
+
+.pricing-column p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pricing-column h3{
+    font-size: 35px;
+    margin: 20px 0 30px;
+    font-weight: 500;
+}
+
+.pricing-column h3 span{
+    font-size: 16px;
+
+}
+
+.pricing-column ul{
+    text-align: left;
+    margin: 30px 0;
+    color: white;
+    list-style: none;
+}
+
+.pricing-column ul li{
+    margin: 15px 0;
+
+}
+
+.pricing-column ul li::before{
+    content: '\2022'; /* \2022 for dot symbol in list */
+    color: red;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.pricing-column button{
+    width: 100%;
+    padding: 14px 0;
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;   
+    color: white;
+    border: 3px solid red;
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.pricing-column button:hover{
+    background: red;
+}
+
